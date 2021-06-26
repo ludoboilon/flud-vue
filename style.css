@@ -1,0 +1,176 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: sans-serif;
+  background: #e5e5e5;
+  color: #13110d;
+  letter-spacing: 0.33px;
+}
+
+.container {
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  overflow-y: scroll;
+}
+
+#navigation {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 10px;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+#navigation ul {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navigation ul li {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #13110d;
+}
+
+#search {
+  margin: 0 auto;
+}
+
+#search input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #ccc;
+}
+
+#search input:-ms-input-placeholder {
+  font-weight: 400;
+  color: #ccc;
+}
+
+#search input::-ms-input-placeholder {
+  font-weight: 400;
+  color: #ccc;
+}
+
+#search input::placeholder {
+  font-weight: 400;
+  color: #ccc;
+}
+
+#search input, #search input:focus, #search input:hover, #search button, #search button:focus, #search button:hover {
+  padding: 5px;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  outline: none;
+}
+
+#list-products {
+  margin-top: 10px;
+}
+
+#list-products .product {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#list-products .product:last-child {
+  margin-bottom: 0;
+}
+
+#list-products .product h3 {
+  font-size: 1.2rem;
+}
+
+#list-products .product .prix {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#list-products .product .prix .prixDif {
+  font-size: 0.7rem;
+  color: green;
+  display: block;
+  margin-top: 3px;
+  text-align: right;
+}
+
+#list-products .product .id {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2rem;
+  opacity: 0.15;
+  font-family: Georgia;
+}
+
+#list-products .product .btns {
+  margin-top: 20px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#list-products .product .btns span {
+  background: #e5e5e5;
+  font-size: 1.2rem;
+  padding: 8px 0;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#list-products .product .btns span:nth-child(2) {
+  background: #fff;
+  font-family: Georgia;
+  margin: 0;
+  cursor: none;
+}
+
+.profit {
+  font-size: 0.7rem;
+  color: green;
+  margin-top: 3px;
+}
+/*# sourceMappingURL=style.css.map */

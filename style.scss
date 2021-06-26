@@ -1,0 +1,54 @@
+@import "sass/variables";
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: sans-serif;
+  background: $prim-color;
+  color: $dark-color;
+  letter-spacing: 0.33px;
+}
+
+// #preloader {
+//   position: fixed;
+//   top: 0; right: 0; bottom: 0; left: 0;
+//   background: #fff;
+//   font-size: 50px;
+//   z-index: 999;
+//   align-items: center;
+//   justify-content: center;
+//   animation: preload 2s;
+//   -webkit-animation: preload 2s;
+// }
+
+// @keyframes preload {
+//   0% {
+//     display: flex;
+//   }
+//   100% {
+//     display: none;
+//   }
+// }
+
+.container {
+  position: fixed;
+  top: 60px; right: 10px; bottom: 10px; left: 10px;
+  overflow-y: scroll;
+}
+
+@import "sass/navigation", "sass/listProducts", "sass/cartlist";
