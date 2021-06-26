@@ -16,7 +16,7 @@
     <nav id="navigation">
       <ul>
         <li id="title">Accueil</li>
-        <li id="cart"><span id="total-cart" v-bind="total">{{ total }}</span>€ 🛒<p class="profit">+0,00€</p>
+        <li id="cart"><span id="total-cart">{{ total }}</span>€ 🛒<p class="profit">+0,00€</p>
         </li>
       </ul>
     </nav>
@@ -30,10 +30,13 @@
         <li class="product">
           <h3>{{ product.name }}</h3>
           <div class="prix">
-            <span class="prixFr">{{ product.prixFr }}€</span> / <span class="prixLux">{{ product.prixLux }}€</span>
-            <span class="prixDif">(+ {{ (product.prixFr - product.prixLux).toFixed(2) }}€)</span>
+            <span class="prixFr">{{ (product.prixFr * product.quantity).toFixed(2) }}€</span>
+            <span class="prixDif">(+ {{ ((product.prixFr - product.prixLux) * product.quantity).toFixed(2) }}€)</span>
           </div>
-          <div class="id">#<span id="id">{{ product.id }}</span></div>
+          <!-- = (product.quantity * product.prixLux).toFixed(2) -->
+          <div class="id">€<span id="id">{{ (product.prixLux * product.quantity).toFixed(2) }}
+            </span>
+          </div>
           <div class="btns">
             <span class="retirer" @click="product.quantity--">-</span>
             <span class="quantity">{{ product.quantity }}</span>
