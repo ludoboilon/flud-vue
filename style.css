@@ -30,6 +30,8 @@ html, body {
   bottom: 10px;
   left: 10px;
   overflow-y: scroll;
+  max-width: 800px;
+  margin: auto;
 }
 
 #navigation {
