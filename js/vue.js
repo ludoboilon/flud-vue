@@ -19,6 +19,11 @@ const vm = Vue.createApp({
   methods: {
     test() {
       console.log('hello world!');
+    },
+    calcTotal(){
+      for(var i = 0; i < products.length; i++) {
+        total += (this.quantity * this.prixLux);
+      }
     }
   }
 }).mount('#app');

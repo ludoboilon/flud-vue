@@ -15,12 +15,17 @@
   <div id="app">
     <nav id="navigation">
       <ul>
-        <li id="title"><a href="home.html">Accueil</a></li>
-        <li id="cart"><a href="cartlist.html"><span id="total-cart">{{ total }}</span>€ 🛒<p class="profit">+0,00€</p>
-          </a></li>
+        <li id="title">Accueil</li>
+        <li id="cart"><span id="total-cart" v-bind="total">{{ total }}</span>€ 🛒<p class="profit">+0,00€</p>
+        </li>
       </ul>
     </nav>
     <div class="container">
+      <form id="search">
+        <input type="textarea" placeholder="Rechercher un produit...">
+        <button>🔍</button>
+      </form>
+      <!--  -->
       <ul id="list-products" v-for="product in products">
         <li class="product">
           <h3>{{ product.name }}</h3>
